@@ -1,0 +1,530 @@
+/* General Css */
+:root{
+        --green:rgb(38, 185, 153);
+}
+body{
+        background-color: #021024;
+}
+/* Media query for tablets and large screen */
+@media only screen and (min-width:790px){
+        .about, .intro, .work{
+                padding-right: 5%;
+                padding-left: 10%;
+                width: 80%;
+                margin-bottom: 3rem;
+        }
+        .navbar{
+                justify-content: space-between;
+                padding-right: 5%;
+        }
+        .navbar .n-left{
+                margin-left: -5%;
+        }
+        .navbar .n-right{
+             padding-left: 30%;
+             width: 44%;
+             gap: 1rem;
+             justify-content: center;
+             align-items: center;
+        }
+        .navbar .n-right>:nth-child(5){
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             width: 25%;
+             padding-inline: 1rem;
+             height: 6vh;
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             font-size: 0.9rem;
+             border-radius: 4px;
+             border: 1px solid rgb(38, 185, 153);
+        }
+        /* Social css */
+        .social_links2{
+                display: none;
+        }
+        .social_links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1rem;
+        position: fixed;
+        z-index: 1;
+        left:3%;
+        top:45%;
+        }
+
+        .social_links img{
+        transform: scale(0.5);
+        border: 1px solid rgb(38, 185, 153);
+        background-color: grey;
+        border-radius: 50%;
+        }
+        .social_links img:hover{
+        background-size: 50%;
+        background-color: rgb(38, 185, 153);
+        }
+        .social_links hr{
+        margin-top: 0rem;
+        height: 5rem;
+        width: thin;
+        outline-color: rgb(38, 185, 153);
+        }
+        .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2.1rem;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        left: 83%;
+        top: 60%;
+        }
+        .email h5{
+        transform: rotate(90deg);
+        letter-spacing: 0.1rem;
+        color: grey;
+        }
+        .email a:hover {
+        transform: scale(1.06);
+        color: rgb(38, 185, 153);
+        }
+        .email a:hover h5{
+                color: rgb(38, 185, 153);
+        }
+
+        .email hr{
+        height: 4rem;
+        }
+       
+        .greeting h5{
+                font-size: 1.5rem;
+        }
+        .intro_name>:nth-child(1){
+            font-size: 3.5rem;
+            font-weight: 720;
+            font-family: sans-serif;
+            color: rgb(202, 227, 247);
+            margin-top: -1rem;
+        }
+        .intro_name>:nth-child(2){
+                font-size: 3.5rem;
+                font-weight: 720;
+                font-family: sans-serif;
+                color: rgb(131, 149, 161);;
+                margin-top: -3rem;
+                opacity: 0.8;
+        }
+        .intro_info{
+                margin-top: -2rem;
+            font-size: 0.9rem;
+            max-width:60%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-justify: auto;
+            text-shadow: #021024;
+        }
+       
+        .intro_info{
+                max-width: 60%;
+        }
+        .bio-container{
+              display: flex;
+              flex-direction: row;
+              gap: -1rem;  
+        }
+        .bio-container .biography{
+                max-width: 60%;
+        }
+        .image{
+                width: 60%;
+        }
+
+        .workcard_container{
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                position: relative;
+                left: -2%;
+                margin-top: 1.5rem;
+        }
+        .workcard_container #project_image1{
+                width: 250%;
+                height: 47vh;
+                position: relative;
+                left: 6.5%;
+        }
+        .workcard_container #project_image2{
+                width: 250%;
+                height: 47vh;
+                position: relative;
+                left: -0.5%;
+        }
+
+        .workcard_container #project_image1 img{
+                height: 100%;
+                width: 100%;
+                opacity: 0.8;
+                filter: hue-rotate(90deg);
+        }
+
+        .workcard_container #project_image2 img{
+                height: 100%;
+                width: 100%;
+                opacity: 0.8;
+                filter: hue-rotate(90deg);
+        }
+        .project_image:hover img{
+                cursor: pointer;
+                filter: none;
+        }
+        .work-card{
+                z-index: 1;
+                background: none;
+                width: 60%;
+        }
+        .work-card #heading1 {
+                text-align: end;
+        }
+        .work-card #heading1 h2{
+                font-size: 1.2rem;
+        }
+        .work-card #description1{
+                background-color: rgb(2, 19, 31);
+                z-index: 2;
+                width: 70vh;
+                margin-left: 5%;
+        } 
+        #resources1{
+                position: relative;
+                margin-left: 55%;
+        }
+        #image_links1{
+                position: inherit;
+                margin-left: 80%;
+        }
+
+        .work-card #heading2 {
+                text-align: start;
+                margin-left: 13%;
+        }
+        .work-card #heading2 h2{
+                font-size: 1.2rem;
+        }
+        .work-card #description2{
+                background-color: rgb(2, 19, 31);
+                z-index: 2;
+                width: 70vh;
+                margin-left: 11%;
+        } 
+        #resources2{
+                position: relative;
+                margin-left: 13%;
+        }
+        #image_links2{
+                position: inherit;
+                margin-left: 13%;
+        }
+        .contact_us .copyright{
+                margin-top: 12%;
+        }
+}
+
+/* Media query for mobile devices and small screen*/
+@media only screen and (max-width:789.5px){
+        .work .project_image{
+                display: none;
+        }
+        /* Social Links */
+.social_links, .email{
+        display: none;
+}
+
+.navbar .n-right>:nth-child(1), .n-right>:nth-child(2), .n-right>:nth-child(4) {
+        display: none;
+}
+.navbar .n-right>:nth-child(5){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 25%;
+        height: 6vh;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        border: 1px solid rgb(38, 185, 153);
+   }
+
+.intro, .about{
+        padding-left: 5%;
+        margin-bottom: 3rem;
+    }
+    .work{
+            padding: 10%;
+    }
+    .greeting h5{
+            font-size: 1rem;
+    }
+    .intro_name>:nth-child(1){
+        font-size: 2rem;
+        font-weight: 720;
+        font-family: sans-serif;
+        color: rgb(202, 227, 247);
+        margin-top: -0.5rem;
+    }
+    .intro_name>:nth-child(2){
+            font-size: 2rem;
+            font-weight: 720;
+            font-family: sans-serif;
+            color: rgb(131, 149, 161);;
+            margin-top: -1rem;
+            opacity: 0.8;
+    }
+    .intro_info{
+        font-size: 0.9rem;
+        max-width:90%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-justify: auto;
+        text-shadow: #021024;
+    }
+
+    .work-card{
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        background: rgb(2, 22, 36);
+    }
+
+    /* social links 2 css */
+    .social_links2 img{
+        margin-top: 52%;
+        transform: scale(0.5);
+        border: 1px solid rgb(38, 185, 153);
+        background-color: rgb(38, 185, 153);
+        border-radius: 50%;
+        }
+        .social_links2 img:hover{
+        background-size: 50%;
+        background-color: rgb(131, 149, 161);
+        }
+        .contact_us .copyright{
+                margin-top: -1.2rem;
+        }
+}
+
+/* width */
+::-webkit-scrollbar {
+        width: 5px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #525050;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 8px;
+        
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(36, 35, 35);
+      }
+      
+h5{
+        color:rgb(38, 185, 153);
+        font-family: monospace;
+        font-size: 0.8rem;
+}
+a{
+        text-decoration: none;
+        color:rgb(38, 185, 153);
+}
+a:hover{
+        color: rgb(38, 185, 153);
+        text-decoration: none;
+}
+h2{
+        color: rgb(202, 227, 247);
+        font-family: sans-serif;
+}
+h4{
+        color: rgb(114, 136, 151);
+        font-weight: 400;
+}
+
+/* Navbar Css */
+.navbar{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+        gap: 5%;        
+}
+.n-left img{
+        transform: scale(0.7);
+}
+.n-right{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2%;
+}
+
+
+/* Body css */
+
+.call_to_action a{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 35vh;
+        height: 8vh;
+        margin-top: 2rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        border: 1px solid rgb(38, 185, 153);
+}
+.call_to_action a:hover, .resume:hover{
+        cursor: pointer;
+        opacity: 0.5;
+}
+
+/* About section css */
+
+.about .header, .work .header{
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: row;
+}
+
+.about .biography .words{
+        max-width: 92%;
+}
+.about .biography .technology{
+        display: flex;
+        gap: 1rem;
+        margin-top: -1.2rem;
+        flex-direction: row;
+}
+.about .biography .technology ul{
+        list-style-type: disc;
+        font-size: 0.9rem;
+        color:rgb(131, 149, 161);
+}
+.about .my_image{
+        width: 50%;
+        height: 45vh;
+        position: relative;
+        left: 20%;
+        margin-top: 2rem;
+        border: 2.2px solid rgb(38, 185, 153);
+        border-radius: 4px;
+}
+.about .my_image img{
+        width: 100%;
+        height: 103%;
+        border-radius: 4px;
+        position: relative;
+        left: -6%;
+        top: -1.2rem;
+        filter:hue-rotate(100deg);
+}
+.about .my_image img:hover{
+        cursor: pointer;
+        transform:scale(1.01);
+        filter: none;
+        /* box-shadow: 0px 0px 0px 1500px rgb(38, 185, 153); */
+}
+
+/* Work css */
+
+.work-card:hover h2{
+        color: rgb(38, 185, 153);
+        cursor: pointer;
+}
+.work-card .heading h2{
+    margin-top: -1rem;
+}
+.work-card .description{
+        margin-top: -1rem;
+        max-width: 87%;
+        font: 0.8rem;
+        padding: 0.05rem 1rem 0.01rem 1rem;
+}
+.work-card .resources{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        font-size: 0.8rem;
+        gap: 0.5rem;
+}
+.work-card .resources h4{
+        color: #b9dafa;
+}
+.work-card .image_links{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 2rem;
+}
+.work-card .image_links img{
+        border: 1px solid rgb(38, 185, 153);
+        border-radius: 50%;
+        background-color: rgb(38, 185, 153);
+}
+.work-card .image_links img:hover{
+        background-color: rgb(131, 149, 161);
+}
+
+/* Contact us css */
+.contact_us{
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.contact_us h2{
+        margin-top: -1rem;
+        font-size: 2.5rem;
+}
+.contact_us .message{
+        margin-top: -2rem;
+        max-width: 60%;
+        text-align: center;
+}
+.contact_us .contact_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 8vh;
+        margin-top: 10%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        border: 1px solid rgb(38, 185, 153);
+}
+.contact_button:hover{
+        opacity: 0.4;
+}
+
+
+.contact_us .copyright:hover h5{
+        color: rgb(38, 185, 153);
+}
+.contact_us .copyright h5{
+        color: grey;
+}

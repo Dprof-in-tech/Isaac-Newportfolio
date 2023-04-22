@@ -1,0 +1,37 @@
+body{
+    background-color: #021024;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    position: fixed;
+    top:30%
+
+}
+.loader img{
+    transform: scale(2.5);
+    animation: load;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+@keyframes load {
+    0% {
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(0.9);
+    }
+    40%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(1.5);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
