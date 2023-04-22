@@ -319,7 +319,8 @@ body{
         .work-card{
                 background: url(./img/Lionreads.jpg);
                 background-size: cover;
-                background-repeat: no-repeat
+                background-repeat: no-repeat;
+                opacity: 0.5;
         }
 }
 
