@@ -317,11 +317,13 @@ body{
                 margin-top: -1.2rem;
         }
         .work-card{
-                background: url(./img/Lionreads.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                opacity: 0.5;
+                background-image: url(./img/saleschamp1.jpg);
+                background-size: cover;               
         }
+        .work-card .description h4{
+                color: rgb(202, 227, 247);
+        }
+        
 }
 
 /* width */
