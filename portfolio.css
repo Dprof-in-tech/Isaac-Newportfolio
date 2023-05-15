@@ -318,7 +318,23 @@ body{
         }
         .work-card{
                 background-image: url(./img/saleschamp1.jpg);
+                background-size: cover; 
+        }
+        .work-card2{
+                background-image: url(./img/dclmenugu2image.jpg);
                 background-size: cover;               
+        }
+        .work-card3{
+                background-image: url(./img/damyounggraphics.jpg);
+                background-size: cover; 
+        }
+        .work-card4{
+                background-image: url(./img/rehobothcreations.jpg);
+                background-size:cover;
+        }
+        .work-card5{
+                background-image: url(./img/Graceafrica.jpg);
+                background-size:cover;
         }
         .work-card .description h4{
                 color: rgb(202, 227, 247);
