@@ -241,7 +241,7 @@ body{
         display: none;
 }
 
-.navbar .n-right>:nth-child(1), .n-right>:nth-child(2), .n-right>:nth-child(4) {
+.navbar .n-right>:nth-child(1), .n-right>:nth-child(2), .n-right>:nth-child(4), .n-right>:nth-child(3) {
         display: none;
 }
 .navbar .n-right>:nth-child(5){
@@ -561,9 +561,9 @@ h4{
         outline: none;
         text-decoration: none !important;
         color: #ffffff !important;
-        width: 200px;
+        width: 5rem;
         height: 32px;
-        border-radius: 16px;
+        border-radius: 8px;
         background-color: #0A66C2;
         font-family: "SF Pro Text", Helvetica, sans-serif;
 }
