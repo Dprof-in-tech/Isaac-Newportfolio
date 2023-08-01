@@ -27,7 +27,7 @@ body{
              justify-content: center;
              align-items: center;
         }
-        .navbar .n-right>:nth-child(5){
+        .navbar .n-right>:nth-child(5), .navbar .n-right>:nth-child(6){
              display: flex;
              justify-content: center;
              align-items: center;
